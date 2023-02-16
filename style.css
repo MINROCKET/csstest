@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* * {
+    padding: 0;
+    margin: 0;
+} ЭТО УБИРАЕТ ВСЕ ОТСТУПЫ, ЗВЕЗДОЧКА - ОБРАЩЕНИЕ КО ВСЕМ ЭЛЕМЕНТАМ*/
+body {
+    background-color:#f7f7f7;
+
+    font-size: 13px;
+    font-weight: normal;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; это выбор шрифта*/
+    font-family: 'Roboto', sans-serif;
+/* font: normal 13px 'Roboto', sans-serif ; так тоже можно */
+}
+
+a {
+color:black;
+text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* a:active {
+    color: turquoise;
+} ЭТО ПРИ ЗАЖАТИИ ЛКМ ССЫЛКА ЦВЕТ */
+
+/* a:visited {
+    color: gray;
+} ЭТО ЦВЕТ ДЛЯ ПОСЕЩЕННЫХ ССЫЛОК */
+
+
+
+
+/* id это # class это . */
+.test {
+    width: 135px;
+    height: 190px;
+    border-radius: 25px;
+    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blok1 p {
+color:#86898f;
+margin: 2;
+font-style:italic;
+font-weight:normal;
+text-decoration:none;
+text-transform:none;
+letter-spacing: 1.5px;
+/* color:#86898f; цвет
+margin: 2; внешние отступы бокса
+font-style: italic; стиль (курсив, жир)
+font-weight:normal; жирность текста
+text-decoration: none; подчеркивания зачеркивания и т.д.
+text-transform:none; Большие, маленькие , все большие и т.д. */
+/* letter-spacing: 1.5px; РАССТОЯНИЕ МЕЖДУ БУКВАМИ*/
+/* word-spacing: 5px; РАССТОЯНИЕ МЕЖДУ СЛОВАМИ*/ 
+}
+
+.blok1 {
+margin-bottom: 15px;
+display: flex;
+}
+
+@media (max-width: 700px) {
+    .blok1{
+        text-align: center;
+        display:block;
+    }
+}
+.blok1-info {
+    margin-left: 30px;
+}
+
+.blok1-info h4 {
+    margin-bottom: 10px;
+}
+
+.container {
+padding-top: 30px;
+max-width: 50%;
+margin:auto;
+
+}
+
+/* .social {
+    background-color: rgb(159, 204, 36); фон   
+    margin:0; внешний выступ бокса
+    padding:8px; внутренний выступ бокса
+     border-bottom-style: dotted; Нижняя строка границы */
+    /* border-style: dotted; Граница бокса */
+    /* border: 5px solid; Граница
+    border-bottom-color: #0543c0; цвет нижней границы 
+    } */
+
+.full {
+background:rgb(159, 204, 36);
+padding: 8px;
+margin-bottom: 20px;
+border-radius: 20px;
+
+}
+
+.full h2 {
+padding-left: 10px;
+}
+
+.list {
+padding: 0 20px;
+
+}
+
+.list li {
+    margin-bottom: 5px;
+
+}
+
+.table {
+width: 100%;   
+}
+.table th {
+    padding-bottom: 5px;
+}
+
+.table td {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+/* .table td:nth-child(2), .table td:nth-child(3) {
+    color: #86898f;
+} РЕДАКТИРОВАНИЕ КОЛОНОК */
+
+.table td:nth-child(2), .table td:nth-child(3) {
+    color: #86898f;
+}
+
+.link-list  {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    }
+
+.link-list li {
+margin-bottom: 10px;
+padding-bottom: 3px;
+border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+ text-align: center;
+}
+
+.form-group label {
+ display: block;
+ font-size: 14px;
+ color:#86898f
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing:border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display:flex;
+    margin-bottom: 20px;
+
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.btn {
+    background:black;
+    padding: 15px 20px;
+    color:#fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.numbermail {
+    
+    padding-left: 200px;
+    margin-top: 10px;
+}
